@@ -68,7 +68,36 @@ body{
     transform: scale (1.2);
 }
 
-.legend.seat:not(.occupied):hover{
+.legend .seat:not(.booked):hover{
     cursor: default;
     transform: scale (1);
+}
+
+.legend {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: lightgray;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.legend li small{
+    margin-left: 10px;
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: orange;
 }
