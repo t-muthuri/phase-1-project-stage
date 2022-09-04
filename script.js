@@ -2,9 +2,9 @@ const vehicle = document.querySelector('.vehicle');
 const seat = document.querySelector('.row .seat:not(.booked)');
 const seatNumber = document.getElementById('seat-number');
 const totalAmount = document.getElementById('total-amount');
-const seating = document.getElementById('seating');
+const busChoice = document.getElementById('PSV');
 
-const amountCharged = +seating.value;
+let amountCharged = +busChoice.value;
 //console.log (amountCharged);
 
 vehicle.addEventListener ('click', (event) => {
@@ -15,10 +15,10 @@ vehicle.addEventListener ('click', (event) => {
     //changing color of seat according to legend
     }
     //call a function to count seats picked and charge
-    showNumberOfSeats();
+    tailorFeeToSeats();
 })
 
-function showNumberOfSeats (){
+function tailorFeeToSeats (){
     const seatsPicked = document.querySelectorAll('.row .seat.picked');
     // console.log(seatsPicked)
     const numberOfSeatsPicked = seatsPicked.length;
@@ -26,6 +26,13 @@ function showNumberOfSeats (){
     seatNumber.innerText = numberOfSeatsPicked;
     totalAmount.innerText = numberOfSeatsPicked * amountCharged;
 }
+
+//pick a bus, book a seat(s) and see the charges
+busChoice.addEventListener ('change', (e)=> {
+    amountCharged = +e.target.value;
+    tailorFeeToSeats();
+});
+
 /*
 PSEUDOCODE
 Use a public API
@@ -36,7 +43,7 @@ Use 3 event listeners
 -Click
 ..like a psv sacco
 ..like counts increase when the icon is clicked
-..pick and book a seat
+..pick a bus and book a seat
 -Onchange
 ..colour of the seat changes
 ..amount on the screen updates when a seat is booked
