@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matatu Seat Booking</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="matatu-vehicle">
+        <label>Select Your Seat</label>
+        <select id="seat">
+            <option value="50">01</option>
+            <option value="50">02</option>
+            <option value="50">03</option>
+            <option value="50">04</option>
+            <option value="50">05</option>
+            <option value="50">06</option>
+            <option value="50">07</option>
+            <option value="50">08</option>
+            <option value="50">09</option>
+            <option value="50">10</option>
+            <option value="50">11</option>
+            <option value="50">12</option>
+            <option value="50">13</option>
+            <option value="50">14</option>
+        </select>
+    </div>
+    <ul class = legend>
+        <li>
+            <div class="seat-empty"></div>
+            <small>Empty</small>
+        </li>
+        <li>
+            <div class="seat-picked"></div>
+            <small>Picked</small>
+        </li>
+        <li>
+            <div class="seat-occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <div class="vehicle">
+        <div class="windscreen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat-occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat-occupied"></div>
+            <div class="seat-occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+    <p class="text">
+        You have picked seat <span id="count">0</span> for ksh<span id="total">0</span>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>

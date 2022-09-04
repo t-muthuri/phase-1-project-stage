@@ -1,0 +1,31 @@
+/*
+PSEUDOCODE
+Landing page-interactive, moving photos/animation
+Booking page- selecting icons on page
+Review page - submitting form, like and rating buttons
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.seat{
+    background-color: firebrick;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-
+}
