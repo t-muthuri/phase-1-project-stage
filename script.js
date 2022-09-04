@@ -4,7 +4,7 @@ const seatNumber = document.getElementById('seat-number');
 const totalAmount = document.getElementById('total-amount');
 const seating = document.getElementById('seating');
 
-const amountCharged = seating.value;
+const amountCharged = +seating.value;
 //console.log (amountCharged);
 
 vehicle.addEventListener ('click', (event) => {
@@ -14,9 +14,18 @@ vehicle.addEventListener ('click', (event) => {
     event.target.classList.toggle('picked');
     //changing color of seat according to legend
     }
-    //call a function to count seats picked
-    showSeatNumbers ();
+    //call a function to count seats picked and charge
+    showNumberOfSeats();
 })
+
+function showNumberOfSeats (){
+    const seatsPicked = document.querySelectorAll('.row .seat.picked');
+    // console.log(seatsPicked)
+    const numberOfSeatsPicked = seatsPicked.length;
+
+    seatNumber.innerText = numberOfSeatsPicked;
+    totalAmount.innerText = numberOfSeatsPicked * amountCharged;
+}
 /*
 PSEUDOCODE
 Use a public API
