@@ -49,6 +49,18 @@ function loadDataValue (ind, val){
     localStorage.setItem('seatVal',val)
 }
 
+tailorFeeToSeats()
+
+var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+  
+  fetch("https://3b036afe-0110-4202-b9ed-99718476c2e0@api.navitia.io/v1/coverage/sandbox/lines", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
 // function serverStore(){
 //     const seatsPicked = JSON.parse(localStorage.getItem(seatsPicked))
 
@@ -66,7 +78,7 @@ function loadDataValue (ind, val){
 //     }
 // }
 
-tailorFeeToSeats()
+
 /*
 PSEUDOCODE
 Use a public API
