@@ -64,6 +64,17 @@
         </button>
       </div>
       </div>-->
+
+      <!--Start of Header-->
+        <header class="showcase">
+            <div class="container showcase-inner">
+                <h1>Welcome to Stage Station</h1>
+                <p></p>
+                <a href="#" class="btn">Select PSV</a>
+            </div>
+        </header>
+        <!--End of header-->
+
     <div class="matatu-vehicle">
         <label>Select a PSV</label>
         <select id="PSV">
@@ -78,7 +89,9 @@
             <option value="50">Walokana</option>
         </select>
     </div>
-    <label class = "available-seats">Pick your seat</label>
+
+    <div class="matatu-vehicle-body">
+        <label class = "available-seats">Pick your seat</label>
     <ul class = legend>
         <li>
             <div class="seat empty">
@@ -281,6 +294,8 @@
     <p class="text">
         No. of seats <span id="seat-number">0</span> = Ksh.<span id="total-amount">0</span>
     </p>
+    </div>
+    
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/2c573c0379.js" crossorigin="anonymous"></script>
 </body>
