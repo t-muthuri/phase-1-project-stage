@@ -5,15 +5,35 @@ Booking page- selecting icons on page
 Review page - submitting form, like and rating buttons
 */
 
+.hscreen{
+    height: 100vh;
+}
+
+.wscreen{
+    width: 100vw;
+}
+
+.hfull {
+    height: 100%;
+}
+
+wfull {
+    width: 100%;
+}
+
+.flex {
+    display:flex;
+}
+
 *{
     box-sizing: border-box;
 }
 
 body{
-    background-color: #000;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    color: wheat;
+    color: rgb(78, 41, 23);
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -21,12 +41,14 @@ body{
 }
 
 .seat{
-    /* background-color: wheat; */
+    background-color: rgba(0, 0, 0, 0.274);
     height: 30px;
     width: 45px;
-    /* margin: 3px; */
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+    margin: 3px;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .row{
@@ -38,7 +60,7 @@ body{
 }
 
 .matatu-vehicle select{
-    background-color: wheat;
+    background-color: salmon;
     border: 0;
     border-radius: 5px;
     font-size: 14px;
@@ -49,26 +71,22 @@ body{
     appearance: none;
 }
 
-.fa-regular .fa-user{
-    font-size: fa-xl;
-}
-
-/* .seat.picked{
+.seat.picked{
     background-color: lightcoral;
 }
 
 .seat.booked{
     background-color: orangered;
     
-} */
+}
 
 .seat:nth-of-type(2){
-    margin-right: 18px;
+    margin-right: 30px;
 }
 
 .seat:not(.booked):hover{
     cursor: pointer;
-    transform: scale (1.2);
+    transform: scale (3);
 }
 
 .legend .seat:not(.booked):hover{
@@ -77,10 +95,10 @@ body{
 }
 
 .legend {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.178);
     padding: 5px 10px;
     border-radius: 5px;
-    color: lightgray;
+    color: gray;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -109,5 +127,20 @@ p.text {
 }
 
 p.text span {
-    color: orange;
+    color: rgb(255, 85, 0);
+    font-size: large;
+    font-weight: 200;
+}
+
+p.text {
+    font-size: large;
+}
+
+.seat i{
+    font-size: 1em;
+    /* padding: 5px 15px; */
+}
+
+.available-seats {
+    font-size: x-large;
 }
