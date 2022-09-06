@@ -124,6 +124,23 @@ fetch("http://localhost:3000/buses")
   })
   .catch(error => console.log('error', error));
 
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+        const imageInsert6 = data[6].imageurl;
+        spaceToInsert6.textContent = imageInsert6;
+        spaceToInsert6.src = imageInsert6;
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+        const imageInsert7 = data[7].imageurl;
+        spaceToInsert7.textContent = imageInsert7;
+        spaceToInsert7.src = imageInsert7;
+  })
+  .catch(error => console.log('error', error));
 /*
 PSEUDOCODE
 Use a public API
