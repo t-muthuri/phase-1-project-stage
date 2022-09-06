@@ -47,15 +47,15 @@ tailorFeeToSeats()
 
 const insertBusImage = document.querySelector('.sacco-list')
 let getBusImage = document.querySelectorAll ('.bus-img')
-const spaceToInsert1 = document.getElementById('star-bus')
-const spaceToInsert2 = document.getElementById('kbs')
-const spaceToInsert3 = document.getElementById('super-metro')
-const spaceToInsert4 = document.getElementById('orokise')
-const spaceToInsert5 = document.getElementById('rog')
-const spaceToInsert6 = document.getElementById('kenya-mpya')
-const spaceToInsert7 = document.getElementById('zuri')
-const spaceToInsert8 = document.getElementById('msl')
-const spaceToInsert9 = document.getElementById('walokana')
+const spaceToInsert0 = document.getElementById('star-bus')
+const spaceToInsert1 = document.getElementById('kbs')
+const spaceToInsert2 = document.getElementById('super-metro')
+const spaceToInsert3 = document.getElementById('orokise')
+const spaceToInsert4 = document.getElementById('rog')
+const spaceToInsert5 = document.getElementById('kenya-mpya')
+const spaceToInsert6 = document.getElementById('zuri')
+const spaceToInsert7 = document.getElementById('msl')
+const spaceToInsert8 = document.getElementById('walokana')
 
 fetch("http://localhost:3000/buses")
   .then(response => response.json())
@@ -63,12 +63,35 @@ fetch("http://localhost:3000/buses")
     
         //When you set the textContent property, all child nodes are removed and replaced 
         //by only one new text node.
-        const imageInsert = data[1].imageurl;
-        spaceToInsert1.textContent = imageInsert;
-        spaceToInsert1.src = imageInsert
-        
-        console.log (data)
+        const imageInsert0 = data[0].imageurl;
+        spaceToInsert0.textContent = imageInsert0;
+        spaceToInsert0.src = imageInsert0;
     
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+    
+        //When you set the textContent property, all child nodes are removed and replaced 
+        //by only one new text node.
+        const imageInsert1 = data[1].imageurl;
+        spaceToInsert1.textContent = imageInsert1;
+        spaceToInsert1.src = imageInsert1;
+    
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+    
+        //When you set the textContent property, all child nodes are removed and replaced 
+        //by only one new text node.
+        const imageInsert1 = data[1].imageurl;
+        spaceToInsert1.textContent = imageInsert1;
+        spaceToInsert1.src = imageInsert1;
     
   })
   .catch(error => console.log('error', error));
