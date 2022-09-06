@@ -8,296 +8,301 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <!--<div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleCaptions"
-            data-mdb-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleCaptions"
-            data-mdb-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleCaptions"
-            data-mdb-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+    <header class="landing-page">
+        <div class="bus station">
+            <h1>BUS STATION</h1>
+            <p>Welcome to stage</p>
+            <a href="#" class="btn">Select PSV</a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
+    </header>
+    <div class="booking">
+        <div class="matatu-vehicle">
+            <label>Select a PSV</label>
+            <select id="PSV">
+                <option value="60">Star Bus</option>
+                <option value="70">KBS</option>
+                <option value="90">Super Metro</option>
+                <option value="80">Orokise</option>
+                <option value="50">ROG</option>
+                <option value="40">Kenya Mpya</option>
+                <option value="30">Zuri</option>
+                <option value="60">MSL</option>
+                <option value="50">Walokana</option>
+            </select>
         </div>
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      </div>-->
-
-      <!--Start of Header-->
-        <header class="showcase">
-            <div class="container showcase-inner">
-                <h1>Welcome to Stage Station</h1>
-                <p></p>
-                <a href="#" class="btn">Select PSV</a>
+        <div class="matatu-vehicle-body">
+            <label class = "available-seats">Pick your seat</label>
+            <ul class = legend>
+                <li>
+                    <div class="seat empty">
+                        <i class="fa-regular fa-user fa-xl"></i>
+                    </div>
+                    <small>Empty</small>
+                </li>
+                <li>
+                    <div class="seat picked">
+                        <i class="fa-regular fa-user fa-xl"></i>
+                    </div>
+                    <small>Picked</small>
+                </li>
+                <li>
+                    <div class="seat booked">
+                        <i class="fa-regular fa-user fa-xl"></i>
+                    </div>
+                    <small>Booked</small>
+                </li>
+            </ul>
+            <div class="vehicle">
+                <div class="windscreen"></div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat booked">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                    <div class="seat">
+                        <button type="button"><i class="fa-regular fa-user"></i></button>
+                    </div>
+                </div>
             </div>
-        </header>
-        <!--End of header-->
-
-    <div class="matatu-vehicle">
-        <label>Select a PSV</label>
-        <select id="PSV">
-            <option value="60">Star Bus</option>
-            <option value="70">KBS</option>
-            <option value="90">Super Metro</option>
-            <option value="80">Orokise</option>
-            <option value="50">ROG</option>
-            <option value="40">Kenya Mpya</option>
-            <option value="30">Zuri</option>
-            <option value="60">MSL</option>
-            <option value="50">Walokana</option>
-        </select>
-    </div>
-
-    <div class="matatu-vehicle-body">
-        <label class = "available-seats">Pick your seat</label>
-    <ul class = legend>
-        <li>
-            <div class="seat empty">
-                <i class="fa-regular fa-user fa-xl"></i>
-            </div>
-            <small>Empty</small>
-        </li>
-        <li>
-            <div class="seat picked">
-                <i class="fa-regular fa-user fa-xl"></i>
-            </div>
-            <small>Picked</small>
-        </li>
-        <li>
-            <div class="seat booked">
-                <i class="fa-regular fa-user fa-xl"></i>
-            </div>
-            <small>Booked</small>
-        </li>
-    </ul>
-    <div class="vehicle">
-        <div class="windscreen"></div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat booked">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
-            <div class="seat">
-                <button type="button"><i class="fa-regular fa-user"></i></button>
-            </div>
+            <p class="text">No. of seats <span id="seat-number">0</span> = Ksh.<span id="total-amount">0</span>
+            </p>
         </div>
     </div>
-    <p class="text">
-        No. of seats <span id="seat-number">0</span> = Ksh.<span id="total-amount">0</span>
-    </p>
-    </div>
+    <section class="reviews">
+        <h1>BUS SACCO REVIEWS</h1>
+        <p>Your favourite ride</p>
+
+        <div class="row">
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>STAR BUS</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>KBS</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>SUPER METRO</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>OROKISE</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>ROG</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>KENYA MPYA</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>ZURI</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>MSL</h3>
+                </div>
+            </div>
+            <div class="sacco-list">
+                <img src="" alt="">
+                <div class="name-hover">
+                    <h3>WALOKANA</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/2c573c0379.js" crossorigin="anonymous"></script>
 </body>
 </html>
-

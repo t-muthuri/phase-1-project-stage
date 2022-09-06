@@ -68,6 +68,10 @@ body{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Lato', 'sans-serif';
 }
 
@@ -77,10 +81,11 @@ body{
     border-radius: 5px;
     font-size: 14px;
     margin-left: 10px;
-    padding: 5px 15px 5px 15px;
+    padding: 10px 30px 10px 30px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    text-align: center;
 }
 
 .seat.picked{
@@ -166,7 +171,7 @@ p.text {
     padding: 0 3rem;
 }
 
-.showcase
+.landing-page
 {
     background: rgba(0, 0, 0, 0.75);
     color: #fff;
@@ -174,10 +179,10 @@ p.text {
     position: relative;
 }
 
-.showcase:before
+.landing-page:before
 {
     content: '';
-    background: url() no-repeat center center/cover;
+    background: url(https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -186,7 +191,7 @@ p.text {
     z-index: -1;
 }
 
-.showcase .showcase-inner
+.landing-page .station
 {
     display: flex;
     flex-direction: column;
@@ -196,14 +201,14 @@ p.text {
     height: 100%;
 }
 
-.showcase h1
+.landing-page h1
 {
     font-size: 4rem;
     color: #fff;
     font-family: 'Lato', 'sans-serif';
 }
 
-.showcase p
+.landing-page p
 {
     font-size: 1.3rem;
     color: #fff;
@@ -229,4 +234,72 @@ p.text {
     color: #000;
     background: #fff;
     font-size: 18px;
+}
+
+/* Various Works */
+.reviews
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.reviews h1
+{
+    font-size: 36px;
+    font-weight: 600px;
+}
+.reviews p
+{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.sacco-list
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin: 10px;
+    /*margin-bottom: 30px;*/
+    position: relative;
+    overflow: hidden;
+}
+.sacco-list img
+{
+    width: 100%;
+    display: block;
+}
+.name-hover
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.name-hover:hover
+{
+    background: rgba(226, 0, 0, 0.7);
+}
+.name-hover h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.name-hover:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
 }
