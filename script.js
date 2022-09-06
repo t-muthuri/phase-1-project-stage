@@ -46,7 +46,9 @@ tailorFeeToSeats()
 //inserting images
 
 const insertBusImage = document.querySelector('.sacco-list')
-const spaceToInsert = document.getElementById('super-metro')
+const getBusImage = document.querySelectorAll ('.bus-img')
+// const spaceToInsert = document.getElementById('super-metro')
+console.log(getBusImage)
 
 fetch("http://localhost:3000/buses")
   .then(response => response.json())
