@@ -6,6 +6,15 @@ TRE MUTHURI
 
 Stage is an online platform where people book and track public service vehicles from the comfort of their home,office or workplace.
 
+## demo
+
+## setup
+
+Run this command to get the backend started:
+
+json-server --watch buses.json
+
+
 # pitch
 
 Standing at the bus stop and waiting for the next public service vehicle to arrive is a common trend in  Nairobi. Sitting in a matatu (a public service vehicle) or a bus for half an hour or more and waiting for it to fill up with passengers is nothing uncommon.

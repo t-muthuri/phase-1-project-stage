@@ -44,7 +44,6 @@ function loadDataValue (ind, val){
 tailorFeeToSeats()
 
 //inserting images
-
 const insertBusImage = document.querySelector('.sacco-list')
 let getBusImage = document.querySelectorAll ('.bus-img')
 const spaceToInsert0 = document.getElementById('star-bus')
