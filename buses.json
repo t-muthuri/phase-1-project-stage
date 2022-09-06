@@ -1,0 +1,50 @@
+{
+    "buses":[
+        {
+            "id":1,
+            "name":"STAR BUS",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":2,
+            "name":"KBS",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":3,
+            "name":"SUPER METRO",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":4,
+            "name":"OROKISE",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":5,
+            "name":"ROG",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":6,
+            "name":"KENYA MPYA",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":7,
+            "name":"ZURI",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":8,
+            "name":"MSL",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        },
+        {
+            "id":9,
+            "name":"WALOKANA",
+            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+        }
+    ]
+    
+}
