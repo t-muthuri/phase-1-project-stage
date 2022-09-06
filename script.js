@@ -60,7 +60,6 @@ const spaceToInsert8 = document.getElementById('walokana')
 fetch("http://localhost:3000/buses")
   .then(response => response.json())
   .then(data =>{
-    
         //When you set the textContent property, all child nodes are removed and replaced 
         //by only one new text node.
         const imageInsert0 = data[0].imageurl;
@@ -73,9 +72,6 @@ fetch("http://localhost:3000/buses")
   fetch("http://localhost:3000/buses")
   .then(response => response.json())
   .then(data =>{
-    
-        //When you set the textContent property, all child nodes are removed and replaced 
-        //by only one new text node.
         const imageInsert1 = data[1].imageurl;
         spaceToInsert1.textContent = imageInsert1;
         spaceToInsert1.src = imageInsert1;
@@ -86,26 +82,45 @@ fetch("http://localhost:3000/buses")
   fetch("http://localhost:3000/buses")
   .then(response => response.json())
   .then(data =>{
-    
-        //When you set the textContent property, all child nodes are removed and replaced 
-        //by only one new text node.
         const imageInsert1 = data[1].imageurl;
         spaceToInsert1.textContent = imageInsert1;
         spaceToInsert1.src = imageInsert1;
-    
   })
   .catch(error => console.log('error', error));
 
   fetch("http://localhost:3000/buses")
   .then(response => response.json())
   .then(data =>{
-    
-        //When you set the textContent property, all child nodes are removed and replaced 
-        //by only one new text node.
         const imageInsert2 = data[2].imageurl;
         spaceToInsert2.textContent = imageInsert2;
         spaceToInsert2.src = imageInsert2;
-    
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+        const imageInsert3 = data[3].imageurl;
+        spaceToInsert3.textContent = imageInsert3;
+        spaceToInsert3.src = imageInsert3;
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+        const imageInsert4 = data[4].imageurl;
+        spaceToInsert4.textContent = imageInsert4;
+        spaceToInsert4.src = imageInsert4;
+  })
+  .catch(error => console.log('error', error));
+
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+        const imageInsert5 = data[5].imageurl;
+        spaceToInsert5.textContent = imageInsert5;
+        spaceToInsert5.src = imageInsert5;
   })
   .catch(error => console.log('error', error));
 
