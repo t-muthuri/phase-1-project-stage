@@ -45,13 +45,23 @@ tailorFeeToSeats()
 
 //inserting images
 
-const homeImage = document.querySelector()
-const 
+const insertBusImage = document.querySelector('.sacco-list')
+const spaceToInsert = document.getElementById('super-metro')
 
 fetch("http://localhost:3000/buses")
   .then(response => response.json())
   .then(data =>{
-  } console.log(result))
+    
+        //When you set the textContent property, all child nodes are removed and replaced 
+        //by only one new text node.
+
+        const imageInsert = data[1].imageurl;
+        spaceToInsert.textContent = imageInsert;
+        spaceToInsert.src = imageInsert
+        console.log (data)
+    
+    
+  })
   .catch(error => console.log('error', error));
 
 /*

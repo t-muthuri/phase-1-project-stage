@@ -3,52 +3,52 @@
         {
             "id":1,
             "name":"STAR BUS",
-            "image url":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
+            "imageurl":"https://cfg.co.ke/wp-content/uploads/2015/12/Isuzu-NQR-PSV-Bus-Star-Bus.jpg"
         },
         {
             "id":2,
             "name":"KBS",
-            "image url":"https://pbs.twimg.com/media/DoarH0EWkAA4LVt.jpg"
+            "imageurl":"https://pbs.twimg.com/media/DoarH0EWkAA4LVt.jpg"
         },
         {
             "id":3,
             "name":"SUPER METRO",
-            "image url":"https://www.kenyans.co.ke/files/styles/article_style/public/images/media/super%20me.JPG?itok=cdIuZTVZ"
+            "imageurl":"https://www.kenyans.co.ke/files/styles/article_style/public/images/media/super%20me.JPG?itok=cdIuZTVZ"
         },
         {
             "id":4,
             "name":"OROKISE",
-            "image url":"https://lh3.googleusercontent.com/qLY0ZAsiz7gVbMubM3oB_f2alCN65C9HucX9cFWlpalZT48KbOMmxyzhyfTOQBGAyGmLEpgiqjuJePOKj54VgrUp1JSQA48j1hdSlAcGhzo"
+            "imageurl":"https://lh3.googleusercontent.com/qLY0ZAsiz7gVbMubM3oB_f2alCN65C9HucX9cFWlpalZT48KbOMmxyzhyfTOQBGAyGmLEpgiqjuJePOKj54VgrUp1JSQA48j1hdSlAcGhzo"
         },
         {
             "id":5,
             "name":"ROG",
-            "image url":"https://pbs.twimg.com/media/CFR34toWYAAfKLL.jpg"
+            "imageurl":"https://pbs.twimg.com/media/CFR34toWYAAfKLL.jpg"
         },
         {
             "id":6,
             "name":"KENYA MPYA",
-            "image url":"https://www.kenyans.co.ke/files/styles/article_style/public/images/media/Neo%20kenya%20Mpya.jpg?itok=AVTtoa_w"
+            "imageurl":"https://www.kenyans.co.ke/files/styles/article_style/public/images/media/Neo%20kenya%20Mpya.jpg?itok=AVTtoa_w"
         },
         {
             "id":7,
             "name":"ZURI",
-            "image url":"https://www.kenyans.co.ke/files/styles/article_inner_mobile/public/images/media/A%20Zuri%20Sacco%20matatu..jpg?itok=EoJx1ByE"
+            "imageurl":"https://www.kenyans.co.ke/files/styles/article_inner_mobile/public/images/media/A%20Zuri%20Sacco%20matatu..jpg?itok=EoJx1ByE"
         },
         {
             "id":8,
             "name":"MSL",
-            "image url":"https://i.onthe.io/0fgjhs6s3mb9gfng1.r1200x630.e1a33cdc.jpg"
+            "imageurl":"https://i.onthe.io/0fgjhs6s3mb9gfng1.r1200x630.e1a33cdc.jpg"
         },
         {
             "id":9,
             "name":"WALOKANA",
-            "image url":"https://www.elimucentre.com/wp-content/uploads/2020/11/Registered-Matatu-Sacco-in-Kenya.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2"
+            "imageurl":"https://www.elimucentre.com/wp-content/uploads/2020/11/Registered-Matatu-Sacco-in-Kenya.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2"
         },
         {
             "id":10,
             "name":"Home",
-            "image url":"https://sokodirectory.com/wp-content/uploads/2018/05/Soko-matatu.jpg"
+            "imageurl":"https://sokodirectory.com/wp-content/uploads/2018/05/Soko-matatu.jpg"
         }
         
     ]
