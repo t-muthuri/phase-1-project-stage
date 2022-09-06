@@ -4,7 +4,6 @@ const seatNumber = document.getElementById('seat-number');
 const totalAmount = document.getElementById('total-amount');
 const busChoice = document.getElementById('PSV');
 
-// serverStore();
 let amountCharged = +busChoice.value;
 //console.log (amountCharged);
 
@@ -21,12 +20,6 @@ vehicle.addEventListener ('click', (event) => {
 
 function tailorFeeToSeats (){
     const seatsPicked = document.querySelectorAll('.row .seat.picked');
-    // console.log(seatsPicked)
-    // const seatInd = [...seatsPicked].map(function(seat){
-    //     return [...seat].indexOf(seat);
-    // })
-
-    // localStorage.setItem('seatsPicked', JSON.stringify(seatInd));
 
     const numberOfSeatsPicked = seatsPicked.length;
 
@@ -38,8 +31,7 @@ function tailorFeeToSeats (){
 //pick a bus, book a seat(s) and see the charges
 busChoice.addEventListener ('change', (event)=> {
     amountCharged = +event.target.value;
-    // bookStore (event.target.selectedIndex, event.target.value)
-    //pun intended
+
     tailorFeeToSeats();
 });
 
@@ -51,33 +43,16 @@ function loadDataValue (ind, val){
 
 tailorFeeToSeats()
 
-var requestOptions = {
-    method: 'GET',
-    redirect: 'follow'
-  };
-  
-  fetch("https://3b036afe-0110-4202-b9ed-99718476c2e0@api.navitia.io/v1/coverage/sandbox/lines", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+//inserting images
 
-// function serverStore(){
-//     const seatsPicked = JSON.parse(localStorage.getItem(seatsPicked))
+const homeImage = document.querySelector()
+const 
 
-//     if (seatsPicked !== null && seatsPicked.length > 0){
-//         seats.forEach((seat, index)=> {
-//             if(seatsPicked.indexOf(index)> -1){
-//                 seat.classList.add('picked');
-//             }
-//         })
-//     }
-//     const seatPickedInd =localStorage.getItem('seatPickedInd')
-
-//     if (seatPickedInd != null){
-//         busChoice.selectedIndex = seatInd;
-//     }
-// }
-
+fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+  } console.log(result))
+  .catch(error => console.log('error', error));
 
 /*
 PSEUDOCODE
