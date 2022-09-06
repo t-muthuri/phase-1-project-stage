@@ -96,6 +96,19 @@ fetch("http://localhost:3000/buses")
   })
   .catch(error => console.log('error', error));
 
+  fetch("http://localhost:3000/buses")
+  .then(response => response.json())
+  .then(data =>{
+    
+        //When you set the textContent property, all child nodes are removed and replaced 
+        //by only one new text node.
+        const imageInsert2 = data[2].imageurl;
+        spaceToInsert2.textContent = imageInsert2;
+        spaceToInsert2.src = imageInsert2;
+    
+  })
+  .catch(error => console.log('error', error));
+
 /*
 PSEUDOCODE
 Use a public API
